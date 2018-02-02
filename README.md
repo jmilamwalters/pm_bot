@@ -32,9 +32,10 @@ Provided:
 
 Then:
 
-* Set a timer, which after passage of sixty minutes:
-* Scrapes the issue's comments; and
-* Determines whether the assigned developer has added a new comment;
+* Set a timer, and after passage of sixty minutes:
+* Ensure the issue still exists and that it has not been closed;
+* Ensure that the current issue was recently self-assigned;
+* Ensure no new comments have been added by the developer who self-assigned the issue;
 
 Provided:
 
@@ -47,6 +48,12 @@ Otherwise:
 ```
 @[assigned user] - it's been an hour. What's your plan?
 ```
+
+## Resources:
+
+* [GET a single GitHub issue](https://developer.github.com/v3/issues/#get-a-single-issue)
+* [GET all events relating to a GitHub issue](https://developer.github.com/v3/issues/events/#list-events-for-an-issue)
+* [POST a comment to a single GitHub issue](https://developer.github.com/v3/issues/comments/#create-a-comment)
 
 ## Phoenix
 
