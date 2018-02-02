@@ -4,7 +4,7 @@
 
 https://github.com/revelrylabs/devtools/issues/56
 
-## Development plan
+## Development roadmap
 
 So as to achieve the following AC:
 
